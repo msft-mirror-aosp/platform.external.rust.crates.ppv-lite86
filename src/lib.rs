@@ -5,6 +5,9 @@
 //   Machine (which is a ZST + Copy type), which can only by created unsafely or safely
 //   through feature detection (e.g. fn AVX2::try_get() -> Option<Machine>).
 
+// ANDROID: Use std to allow building as a dylib.
+extern crate std;
+
 mod soft;
 mod types;
 pub use self::types::*;

@@ -16,6 +16,8 @@ rust_library {
 rust_defaults {
     name: "ppv-lite86_defaults",
     crate_name: "ppv_lite86",
+    // has rustc warnings
+    srcs: ["src/lib.rs"],
     test_suites: ["general-tests"],
     auto_gen_config: true,
     edition: "2018",
@@ -28,13 +30,9 @@ rust_defaults {
 rust_test_host {
     name: "ppv-lite86_host_test_src_lib",
     defaults: ["ppv-lite86_defaults"],
-    // has rustc warnings
-    srcs: ["src/lib.rs"],
 }
 
 rust_test {
     name: "ppv-lite86_device_test_src_lib",
     defaults: ["ppv-lite86_defaults"],
-    // has rustc warnings
-    srcs: ["src/lib.rs"],
 }

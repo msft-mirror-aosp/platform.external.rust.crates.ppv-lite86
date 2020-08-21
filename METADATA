@@ -1,7 +1,5 @@
 name: "ppv-lite86"
-description:
-    "Implementation of the crypto-simd API for x86"
-
+description: "Implementation of the crypto-simd API for x86"
 third_party {
   url {
     type: HOMEPAGE
@@ -11,7 +9,11 @@ third_party {
     type: GIT
     value: "https://github.com/cryptocorrosion/cryptocorrosion"
   }
-  version: "0.2.8"
-  last_upgrade_date { year: 2020 month: 6 day: 18 }
+  version: "0.2.9"
   license_type: NOTICE
+  last_upgrade_date {
+    year: 2020
+    month: 8
+    day: 21
+  }
 }

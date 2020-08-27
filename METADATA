@@ -6,8 +6,8 @@ third_party {
     value: "https://crates.io/crates/ppv-lite86"
   }
   url {
-    type: GIT
-    value: "https://github.com/cryptocorrosion/cryptocorrosion"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/ppv-lite86/ppv-lite86-0.2.9.crate"
   }
   version: "0.2.9"
   license_type: NOTICE

@@ -2,7 +2,6 @@
 
 rust_library {
     name: "libppv_lite86",
-    // has rustc warnings
     host_supported: true,
     crate_name: "ppv_lite86",
     srcs: ["src/lib.rs"],
@@ -16,7 +15,6 @@ rust_library {
 rust_defaults {
     name: "ppv-lite86_defaults",
     crate_name: "ppv_lite86",
-    // has rustc warnings
     srcs: ["src/lib.rs"],
     test_suites: ["general-tests"],
     auto_gen_config: true,

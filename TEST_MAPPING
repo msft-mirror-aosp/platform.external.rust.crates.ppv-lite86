@@ -2,10 +2,6 @@
 {
   "presubmit": [
     {
-      "host": true,
-      "name": "ppv-lite86_host_test_src_lib"
-    },
-    {
       "name": "ppv-lite86_device_test_src_lib"
     }
   ]

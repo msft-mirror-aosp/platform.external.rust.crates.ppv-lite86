@@ -55,30 +55,21 @@ rust_library {
     ],
 }
 
-rust_defaults {
-    name: "ppv-lite86_test_defaults",
+rust_test {
+    name: "ppv-lite86_test_src_lib",
+    host_supported: true,
     crate_name: "ppv_lite86",
-    srcs: ["src/lib.rs"],
     cargo_env_compat: true,
     cargo_pkg_version: "0.2.10",
+    srcs: ["src/lib.rs"],
     test_suites: ["general-tests"],
     auto_gen_config: true,
+    test_options: {
+        unit_test: true,
+    },
     edition: "2018",
     features: [
         "default",
         "std",
     ],
-}
-
-rust_test_host {
-    name: "ppv-lite86_host_test_src_lib",
-    defaults: ["ppv-lite86_test_defaults"],
-    test_options: {
-        unit_test: true,
-    },
-}
-
-rust_test {
-    name: "ppv-lite86_device_test_src_lib",
-    defaults: ["ppv-lite86_test_defaults"],
 }
